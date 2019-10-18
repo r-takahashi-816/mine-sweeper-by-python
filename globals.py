@@ -1,0 +1,4 @@
+SIZE = 50
+EMPTY = 0
+BOMB = 1
+OPENED = 2
