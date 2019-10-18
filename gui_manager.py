@@ -25,7 +25,7 @@ class GUIManager:
 		self.message_rect.center = (self.width*SIZE/2,self.height*SIZE/2)
 		self.debug = debug
 
-		strip = pygame.image.load("bomb.png")
+		strip = pygame.image.load("img/bomb.png")
 		bomb_image = pygame.Surface((32,32))
 		bomb_image.blit(strip,(0,0),pygame.Rect((0,0),(32,32)))
 		self.bomb_image = pygame.transform.scale(bomb_image,(50,50))

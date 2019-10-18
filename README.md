@@ -15,3 +15,7 @@ python3 mine_sweeper.py --normal
 ```
 python3 mine_sweeper.py --sticky
 ```
+
+## ライセンス
+イメージファイルを以下のサイトからお借りいたしました.
+ぴぽや http://blog.pipoya.net/
