@@ -39,7 +39,6 @@ class GameLogic:
 		return count
 
 	def open_tile(self,x_pos,y_pos):
-		"""タイルをオープン"""
 		if self.checked[y_pos][x_pos]:
 			return
 		self.checked[y_pos][x_pos] = True

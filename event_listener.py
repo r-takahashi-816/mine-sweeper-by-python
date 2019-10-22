@@ -1,8 +1,7 @@
 
 from globals import *
-import sys
 import pygame
-from pygame.locals import QUIT,MOUSEBUTTONDOWN
+from pygame.locals import QUIT,MOUSEBUTTONDOWN,KEYDOWN,K_UP,K_DOWN,K_LEFT,K_RIGHT
 
 event_registory = {}
 def register(key):
@@ -25,8 +24,19 @@ class EventListener:
 				ret = event_registory["quit"]()
 			elif event.type == MOUSEBUTTONDOWN and event.button == 1:
 				ret = event_registory["click"](event,self.setting.field)
+			elif event.type == KEYDOWN :
+				print("keydown")
+				if event.key == K_UP:
+					ret = "up"
+				elif event.key == K_DOWN:
+					ret = "down"
+				elif event.key == K_LEFT:
+					ret = "left"
+				elif event.key == K_RIGHT:
+					ret = "right"
 		return ret
 
+import sys
 @register(key="quit")
 def quit():
 	pygame.quit()
